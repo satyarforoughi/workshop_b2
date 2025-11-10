@@ -4,8 +4,8 @@
 #SBATCH --cpus-per-task=5
 #SBATCH --time=00:30:00
 #SBATCH --job-name=kmeans_cli
-#SBATCH --output=%x_%j.out
-#SBATCH --error=%x_%j.err
+#SBATCH --output=logs/%x_%j.out
+#SBATCH --error=logs/%x_%j.err
 
 # Create logs dir if doesn't already exist
 mkdir -p logs
