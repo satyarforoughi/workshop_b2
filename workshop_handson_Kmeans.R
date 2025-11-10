@@ -98,3 +98,20 @@ time_4cores_val <- time_4cores$toc - time_4cores$tic
 speedup_4 <- time_1core_val / time_4cores_val
 cat("\nSpeedup compared to 1 core:", round(speedup_4, 2), "x\n")
 cat("Number of iterations:", km_4cores$iter, "\n")
+
+### 5 vs 8 ###
+# tic("K-means with 5 cores")
+# km_5core <- parallel_kmeans(cluster_data_scaled, centers = 5, n_cores = 5)
+# time_5core <- toc()
+# cat("Number of iterations:", km_5core$iter, "\n")
+# time_5core_val <- time_5core$toc - time_5core$tic
+# 
+# 
+# tic("K-means with 8 cores")
+# km_8cores <- parallel_kmeans(cluster_data_scaled, centers = 5, n_cores = 8)
+# time_8cores <- toc()
+# time_8cores_val <- time_8cores$toc - time_8cores$tic
+# 
+# speedup_8 <- time_5core_val / time_8cores_val
+# cat("\nSpeedup compared to 5 cores:", round(speedup_8, 2), "x\n")
+# cat("Number of iterations:", km_8cores$iter, "\n")
