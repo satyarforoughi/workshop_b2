@@ -14,7 +14,7 @@ Note that **ACCESS allocations (accounts)** created for this workshop will remai
 
 To use Bridges2 resources, make sure you can log in through the following link:
 
-- https://ondemand.anvil.rcac.purdue.edu](https://ondemand.bridges2.psc.edu
+- https://ondemand.anvil.rcac.purdue.edu
 
 Bridges2 user guide:
 - https://allocations.access-ci.org/resources/bridges2.psc.access-ci.org
